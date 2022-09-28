@@ -41,6 +41,13 @@ file_get_contents ( string $filename , bool $use_include_path = false , resource
     $legajos_no_en_archivo = "";
     $apellido = "";
 
+    for ($i= 0; ($i<=1); $i++){
+            //$contenido1 .= rtrim($linea0);
+            print($archivo);
+            exit;
+            
+    }
+
     for ($i=0; ($i<=1); $i++){
         if ($i<1) {
             $contenido1 .= rtrim($linea0);
