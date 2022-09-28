@@ -101,9 +101,9 @@ file_get_contents ( string $filename , bool $use_include_path = false , resource
       
         $apellido_formateado = str_pad($apellido_nuevo, 29, ' ', STR_PAD_RIGHT);
 
-        $periodo =  substr("0".$fila, 106, 56);
+        $periodo =  substr("0".$fila.' 0000000000000000000 ', 106, 35);/*INTERIOR*/
         
-        $contenido .= "$inicioCaracter  $cuil_nuevo$apellido_formateado $periodo\r\n";
+        $contenido .= "$inicioCaracter  $cuil_nuevo$apellido_formateado $periodo 0000000000000000000 \r\n";
 
         $cadenaConvertida = iconv('Windows-1252', 'UTF-8', $contenido); // Codificación inicial, Codificación final, Cadena a convertir.
         

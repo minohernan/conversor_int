@@ -29,3 +29,6 @@ Homestead.json
 # Ignorar carpetas
 /salida/*.txt
 /logs/*.txt
+
+# ignore all logs
+*.log
